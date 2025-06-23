@@ -2,9 +2,9 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
-  title: "AI Interface Example",
+  title: "carnation.exe",
   description:
-    "AI Interface Example Description"
+    "Carnation.exe – Contemporary French Poetry AI, built for exhibition by Halim Madi."
 }
 
 export default function RootLayout({
