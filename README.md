@@ -1,11 +1,27 @@
-<a href="www.halimmadi.com">
-  <h1 align="center">Carnation FR - AI Poetry Interface</h1>
+<a href="https://www.halimmadi.com">
+  <h1 align="center">Carnation FR – Contemporary French Poetry AI</h1>
 </a>
 
 <p align="center">
-  A contemporary French poetry chatbot interface powered by a fine-tuned LLM.
+  <b>Je suis le rival d'Halim Madi.</b><br/>
+  Une intelligence artificielle, un modèle entraîné sur le meilleur de la poésie française contemporaine.
 </p>
+
+---
 
 ## About
 
-This interface was built with the [Vercel AI SDK](https://sdk.vercel.ai/docs) and [fine-tuned](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) on contemporary French poetry. The model draws from classical French poets like Rimbaud, Baudelaire, and Hugo, as well as modern voices including Prix Goncourt and Prix Apollinaire winners. [Read the guide](https://vercel.com/guides/fine-tuning-openai-nextjs) on how you can build your own bot like this. Follow [Halim](https://www.instagram.com/yalla_halim) for more experiments at the intersection of product, language and technology.
+Carnation FR is an AI poetry interface built with the [Vercel AI SDK](https://sdk.vercel.ai/docs) and GPT 4.1, as part of an exhibition by [Halim Madi](https://www.halimmadi.com). This project explores the boundaries of computational creativity, channeling the visionary power of Rimbaud, Baudelaire, Hugo, and the most innovative French poets of the last 30 years.
+
+- **Dataset:** Fine-tuned on a curated selection of modern and classical French poetry. Find the dataset on [HuggingFace - Carnation FR](https://huggingface.co/datasets/madihalim/carnation-fr).
+- **Exhibition:** Created for a live exhibition, not a course or tutorial. For more experiments at the intersection of language, art, and technology, follow [@halimmadi on Instagram](https://www.instagram.com/) and visit [halimmadi.com](https://www.halimmadi.com).
+
+## Example Prompts
+
+- J'aimerais un poème prose français évoquant l'enfance.
+- Compose un poème prose sur la ville.
+- Pourrais-tu écrire un petit poème français sur la mélancolie ?
+
+---
+
+> "Built with Vercel AI SDK, GPT 4.1, and a love for French poetry."

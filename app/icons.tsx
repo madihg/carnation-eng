@@ -81,3 +81,17 @@ export const UserIcon = () => {
     </svg>
   )
 }
+
+export const CIcon = () => (
+  <div style={{
+    width: 36,
+    height: 36,
+    borderRadius: '50%',
+    background: '#000',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }}>
+    <span style={{ color: '#fff', fontFamily: 'Courier, monospace', fontWeight: 'bold', fontSize: 22 }}>C</span>
+  </div>
+);

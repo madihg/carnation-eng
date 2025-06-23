@@ -9,14 +9,15 @@ import {
   LoadingCircle,
   SendIcon,
   UserIcon,
+  CIcon,
 } from "./icons";
 import Textarea from "react-textarea-autosize";
 import Image from "next/image";
 
 const examples = [
-  "Example 1",
-  "Example 2",
-  "Example 3",
+  "J'aimerais un poème prose français évoquant l'enfance.",
+  "Compose un poème prose sur la ville.",
+  "Pourrais-tu écrire un petit poème français sur la mélancolie ?",
 ];
 
 export default function Chat() {
@@ -35,7 +36,7 @@ export default function Chat() {
   const disabled = isLoading || input.length === 0;
 
   return (
-    <main className="flex flex-col items-center justify-between pb-40">
+    <main className="flex flex-col items-center justify-between pb-40" style={{ fontFamily: 'Courier, monospace' }}>
       <div className="absolute top-5 hidden w-full justify-between px-5 sm:flex">
       </div>
       {messages.length > 0 ? (
@@ -58,12 +59,7 @@ export default function Chat() {
                 {message.role === "user" ? (
                   <UserIcon />
                 ) : (
-                  <Image
-                    src="/sample-image.png"
-                    alt="sample-image"
-                    width={36}
-                    height={36}
-                  />
+                  <CIcon />
                 )}
               </div>
               <div className="prose prose-p:leading-relaxed mt-1 w-full break-words">
@@ -75,34 +71,23 @@ export default function Chat() {
       ) : (
         <div className="border-gray-200sm:mx-0 mx-5 mt-20 max-w-screen-md rounded-md border sm:w-full">
           <div className="flex flex-col space-y-4 p-7 sm:p-10">
-            <Image
-              src="/sample-image.png"
-              alt="sample-image"
-              width={40}
-              height={40}
-              className="h-20 w-20"
-            />
+            <h1 className="text-2xl font-bold" style={{ fontFamily: 'Courier, monospace' }}>Carnation.exe</h1>
             <h1 className="text-lg font-semibold text-black">
-              Hi, I'm a fine tuned LLM.
+              Je suis le rival d'Halim Madi.
+              <br />
+              Une intelligence artificielle, un modèle entraîné sur le meilleur de la poésie française.
             </h1>
             <p className="text-gray-500">
-              I'm part of a series of computational experiments taught by{" "}
+              Trouver le dataset ici :{' '}
               <a
-                href="https://linkin.bio/yallahalim/"
+                href="https://huggingface.co/datasets/madihalim/carnation-fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium underline underline-offset-4 transition-colors hover:text-black"
               >
-                Halim Madi
-              </a>. I was built using{" "}
-              <a
-                href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium underline underline-offset-4 transition-colors hover:text-black"
-              >
-                fine-tuned GPT4.
+                HuggingFace - Carnation FR
               </a>
+              .
             </p>
           </div>
           <div className="flex flex-col space-y-4 border-t border-gray-200 bg-gray-50 p-7 sm:p-10">
@@ -150,7 +135,7 @@ export default function Chat() {
               "absolute inset-y-0 right-3 my-auto flex h-8 w-8 items-center justify-center rounded-md transition-all",
               disabled
                 ? "cursor-not-allowed bg-white"
-                : "bg-green-500 hover:bg-green-600",
+                : "bg-black hover:bg-gray-800",
             )}
             disabled={disabled}
           >
@@ -167,7 +152,7 @@ export default function Chat() {
           </button>
         </form>
         <p className="text-center text-xs text-gray-400">
-          Built with{" "}
+          Built with{' '}
           <a
             href="https://sdk.vercel.ai/docs"
             target="_blank"
@@ -176,23 +161,23 @@ export default function Chat() {
           >
             Vercel AI SDK
           </a>
-          ,{" "}
+          , GPT 4.1 as part of an exhibition by{' '}
           <a
-            href="https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates"
+            href="https://www.halimmadi.com"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-black"
           >
-            OpenAI GPT-3.5-turbo, as part of a course taught by
-          </a>{" "}
-          Halim Madi.{" "}
+            Halim Madi
+          </a>
+          . Follow on{' '}
           <a
-            href="https://linkin.bio/yallahalim/"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-black"
           >
-            Learn to build your own
+            Instagram
           </a>
           .
         </p>
