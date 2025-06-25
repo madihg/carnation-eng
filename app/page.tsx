@@ -15,9 +15,9 @@ import Textarea from "react-textarea-autosize";
 import Image from "next/image";
 
 const examples = [
-  "J'aimerais un poème prose français évoquant l'enfance.",
-  "Compose un poème prose sur la ville.",
-  "Pourrais-tu écrire un petit poème français sur la mélancolie ?",
+  "I'd like an English prose poem evoking childhood.",
+  "Compose a prose poem about the city.",
+  "Could you write a short English poem about melancholy?",
 ];
 
 export default function Chat() {
@@ -73,19 +73,19 @@ export default function Chat() {
           <div className="flex flex-col space-y-4 p-7 sm:p-10">
             <h1 className="text-2xl font-bold" style={{ fontFamily: 'Courier, monospace' }}>Carnation.exe</h1>
             <h1 className="text-lg font-semibold text-black">
-              Je suis le rival d'Halim Madi.
+              I am the rival of Halim Madi.
               <br />
-              Une intelligence artificielle, un modèle entraîné sur le meilleur de la poésie française.
+              An artificial intelligence, a model trained on the best of contemporary English poetry.
             </h1>
             <p className="text-gray-500">
-              Trouver le dataset ici :{' '}
+              Find the dataset here:{' '}
               <a
                 href="https://huggingface.co/datasets/madihalim/carnation-fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium underline underline-offset-4 transition-colors hover:text-black"
               >
-                HuggingFace - Carnation FR
+                HuggingFace - Carnation ENG
               </a>
               .
             </p>
