@@ -71,7 +71,10 @@ export default function Chat() {
       ) : (
         <div className="border-gray-200sm:mx-0 mx-5 mt-20 max-w-screen-md rounded-md border sm:w-full">
           <div className="flex flex-col space-y-4 p-7 sm:p-10">
-            <h1 className="text-2xl font-bold" style={{ fontFamily: 'Courier, monospace' }}>Carnation.exe</h1>
+            <h1 className="text-2xl font-bold flex items-center" style={{ fontFamily: 'Courier, monospace' }}>
+              <span className="inline-block rounded-full mr-2" style={{ width: '1em', height: '1em', backgroundColor: '#F6009B' }}></span>
+              Carnation.exe
+            </h1>
             <h1 className="text-lg font-semibold text-black">
               I am the rival of Halim Madi.
               <br />
